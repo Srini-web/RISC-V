@@ -5,12 +5,6 @@ This repository contains all the information regarding the 5-day RISC-V based CP
 The RISC-V CPU Core has been designed with the help of Transaction Level Verilog(TL-Verilog) in addition with the Makerchip IDE Platform. 
 # TL-Verilog
 Transaction-Level Verilog (TL-Verilog) is an emerging extension to SystemVerilog that supports a new design methodology, called transaction-level design. For this project, TL-Verilog has been chosed as the HDL of choice for the design. Projects on Makerchip can be completely designed using TL-Verilog. Transaction Level Verilog standard is an extension of Verilog which has various advantages like simpler syntax, shorter codes and easy pipelining. Tha main advantage of TL-Verilog over System Verilog is the amount of code reduction in designing even a simple model.
-# INSTALLATION
-For installation and more details regarding iverilog, yosys and gtkwave, refer to :
-
-https://github.com/Syedhasan7/pes_asic_class
-
-This repo mainly focuses on Day3-5.
 
 # TABLE OF CONTENTS
 ## DAY 1 
@@ -122,13 +116,14 @@ int main(){
 	return 0;
 }
 ```
-![Screenshot from 2023-08-20 19-35-18](https://github.com/Syedhasan7/pes_asic_class/assets/109273742/0b56e2bd-20e4-486a-9e40-6ea5bb1b6187)
+
+
 Using the gcc compiler, we compiled the program to get the output.
 
 `gcc sumton.c`
 `.\a.out`
 
-![Screenshot from 2023-08-20 19-35-33](https://github.com/Syedhasan7/pes_asic_class/assets/109273742/01b93771-601d-4ff3-ba7d-afec0854ed5f)
+<img width="365" alt="262316059-6610f24b-18f5-4e77-b069-364047e482ab" src="https://github.com/Srini-web/RISC-V/assets/77874288/034df913-f8ed-4231-8f41-b803b6c63ee6">
 
 ## RISCV GCC Compiler and Dissemble
 
@@ -175,18 +170,11 @@ go to the directory where riscv64-unkonwn-elf is present
 
 + `spike pk sum1ton.o` is used to check whether the instructions produced are right to give the correct output.
 
-
-![Screenshot from 2023-08-20 20-00-48](https://github.com/Syedhasan7/pes_asic_class/assets/109273742/add29022-f332-400b-abe5-961c1a23461f)
-
-
-
 +  `spike -d pk sum1ton.c` is used for debugging.
 
 +  The contents of the registers can also be viewed.
 
-
-![Screenshot from 2023-08-20 20-10-09](https://github.com/Syedhasan7/pes_asic_class/assets/109273742/1916b1a9-c271-4edc-a1c9-28105541a64b)
-
+![262316202-1afad98b-d71c-4b11-91d6-991c862e1ebb](https://github.com/Srini-web/RISC-V/assets/77874288/db386ffd-8f4e-4f9f-a112-848558a36fea)
 
 
 - press ENTER : to show the first line and successive ENTER to show successive lines
@@ -232,9 +220,9 @@ int main(){
 	return 0;
 }
 ```
-![Screenshot from 2023-08-20 20-18-42](https://github.com/Syedhasan7/pes_asic_class/assets/109273742/62ac1a02-c429-4767-b5d3-9e71260621b2)
 
 
+![262316202-1afad98b-d71c-4b11-91d6-991c862e1ebb](https://github.com/Srini-web/RISC-V/assets/77874288/cd661374-8212-4bd0-8cbd-1f201a8da790)
 
 + We wrote a C program that shows the maximum and minimum values of 64bit signed numbers.
 ``` c
@@ -249,7 +237,7 @@ int main(){
 	return 0;
 }
 ```
-![Screenshot from 2023-08-20 20-21-33](https://github.com/Syedhasan7/pes_asic_class/assets/109273742/9b2a40e6-f636-4db8-b6ff-a720e6a14082)
+<img width="560" alt="262316273-7629b726-9c9d-4d56-a838-88b213468e66" src="https://github.com/Srini-web/RISC-V/assets/77874288/3885814b-f16e-44d5-a4a3-d734981568ae">
 
 
 </details>
@@ -395,7 +383,7 @@ this would generate object file `custom1to9.o`.
 
 `spike pk custom1to9.o`
 
-![Screenshot from 2023-08-20 20-29-14](https://github.com/Syedhasan7/pes_asic_class/assets/109273742/c32f4af0-c473-4d59-8d4a-8e7ad4bf3f41)
+<img width="531" alt="262313351-b91d2dab-0d0d-44ae-92c2-8090aa048adb" src="https://github.com/Srini-web/RISC-V/assets/77874288/bd7edc4a-0e0d-445a-9fa0-8d667c94ea2f">
 
 
 </details>
@@ -3315,7 +3303,7 @@ In addition to all of these, we also have a Memory file for which we have load a
 Fig 1.
 </p>
 
-The code can be found at https://github.com/Syedhasan7/RISC-V/blob/main/final_riscv_core.tlv
+The code can be found at https://github.com/Srini-web/RISC-V/blob/main/final_riscv_core.tlv
 
 + The code required for the RISC-V Core written in TL-Verilog and System Verilog can be compared by selecting the "Show Verilog" on the makerchip platform under the "E" tab. Upon visualization, a significant code reduction can be seen in the comparision chart.
 
